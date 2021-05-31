@@ -5,9 +5,11 @@ const Header = () => {
   return (
     <div className="navbar">
       <Link className="link" to="/">
-        <h1 className="title">POKEDEX CREATOR</h1>
+        <div className="title">POKEDEX CREATOR</div>
       </Link>
-      <div className="favourites">Favourites</div>
+      <Link to="/favourites" className="link">
+        <div className="favourites">Favourites</div>
+      </Link>
     </div>
   );
 };
