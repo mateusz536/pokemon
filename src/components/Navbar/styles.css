@@ -1,0 +1,29 @@
+.navbar {
+    background-color: rgb(0, 255, 170);
+    /* height: 10vh; */
+    width: 100%;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.title {
+    font-family: Poppins;
+}
+
+.favourites {
+    height: 100%;
+    align-self: center;
+    color: rgba(200, 204, 201, 0.829);
+    background-color: seagreen;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: x-large;
+}
+    
+.favourites:hover {
+    cursor: pointer;
+    background-color: rgb(47, 158, 95);
+}

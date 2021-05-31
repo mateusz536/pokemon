@@ -1,0 +1,39 @@
+.containerList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    width: 18vw;
+    font-size: 0.8rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    word-break: normal;
+}
+@media only screen and (max-width: 1200px) {
+  .row {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+      width: 80vw;
+    }
+  }
+
+
+
+.row:hover {
+    background-color: #999a9b85;
+    cursor: pointer;
+}
+
