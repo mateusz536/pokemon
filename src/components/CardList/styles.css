@@ -1,22 +1,31 @@
 .containerList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.link {
+  text-decoration: none;
+  color: crimson;
+}
+
+.searchbar {
+  width: 100%;
+  padding-left: 2vw;
 }
 
 .row {
-    background-color: #f0f8ff;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    width: 18vw;
-    font-size: 0.8rem;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 1vh;
-    word-break: normal;
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  width: 18vw;
+  font-size: 0.8rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+  word-break: normal;
 }
 @media only screen and (max-width: 1200px) {
   .row {
@@ -25,15 +34,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .row {
-      width: 80vw;
-    }
+  .row {
+    width: 80vw;
   }
-
-
-
-.row:hover {
-    background-color: #999a9b85;
-    cursor: pointer;
 }
 
+.row:hover {
+  background-color: #999a9b85;
+  cursor: pointer;
+}
