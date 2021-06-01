@@ -44,19 +44,23 @@ const CardList = ({
   };
 
   return !isLoading ? (
-    <div className="containerList">
-      {cards.slice((currentPage - 1) * 10, currentPage * 10).map((card) => (
-        <Link to={`/pokemon/${card.id}`} key={card.id} className="link">
-          <div className="row">
-            <h2>{card.name}</h2>
-            <img
-              style={{ height: "33vh" }}
-              src={card.images.small}
-              alt=""
-            ></img>
-          </div>
-        </Link>
-      ))}
+    <div
+      style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+    >
+      <div className="containerList">
+        {cards.slice((currentPage - 1) * 10, currentPage * 10).map((card) => (
+          <Link to={`/pokemon/${card.id}`} key={card.id} className="link">
+            <div className="row">
+              <h2>{card.name}</h2>
+              <img
+                style={{ height: "33vh" }}
+                src={card.images.small}
+                alt=""
+              ></img>
+            </div>
+          </Link>
+        ))}
+      </div>
       <Pagination
         count={filteredCardsCount}
         page={currentPage}

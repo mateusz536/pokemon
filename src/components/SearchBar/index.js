@@ -65,12 +65,11 @@ const SearchBar = ({ cards, setFilteredCards, filteredCards }) => {
       setFilteredCards(
         cards.filter((c) => {
           if (searchby === "Name") {
-            console.log("name");
-            return c.name.includes(search);
+            return c.name.toLowerCase().includes(search.toLowerCase());
           } else if (searchby === "Type") {
-            return c.types[0].includes(search);
+            return c.types[0].toLowerCase().includes(search.toLowerCase());
           } else if (searchby === "Subtype") {
-            return c.subtypes[0].includes(search);
+            return c.subtypes[0].toLowerCase().includes(search.toLowerCase());
           } else return false;
         })
       );
