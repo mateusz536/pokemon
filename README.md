@@ -16,7 +16,7 @@ Niektóre z komponentów zostały pobrane z biblioteki material ui.
 Requesty http wykonywane są przy użyciu bilblioteki axios.
 
 Aby włączyć aplikację należy wpisać:
-yarn
-yarn start
+npm install
+npm start
 
 Wykonane przez: Mateusz Bronk
